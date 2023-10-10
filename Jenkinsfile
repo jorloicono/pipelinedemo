@@ -3,8 +3,14 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'chmod a+x run_build_script.sh'
-        sh './run_build_script.sh'
+        echo "Running build script for demo pipeline"
+        echo "building demoapp "
+        echo "*"
+        echo "**"
+        echo "***"
+        echo "****"
+        echo "*****"
+        echo "Build successful"
       }
     }
     stage('Test') {
